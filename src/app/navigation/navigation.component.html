@@ -1,0 +1,9 @@
+<nav class="navigation-top">
+    <ul class="navigation-top-container">
+        <li *ngFor="let navItem of navItems">
+            <a class="navigation-top-item" href="{{navItem.link}}">
+                {{navItem.itemName}}
+            </a>
+        </li>
+    </ul>
+</nav>

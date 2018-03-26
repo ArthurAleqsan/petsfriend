@@ -1,0 +1,18 @@
+.navigation-top{
+  background-color: #000;
+  height: 60px;
+  &-container{
+    display:flex ;
+    justify-content: space-around;
+    li{
+      list-style-type: none;
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+  &-item{
+    text-decoration: none;
+    color: #fff;
+
+  }
+}
