@@ -10,8 +10,8 @@ export class NavigationComponent{
     public navItems: Array<object> = [
         {
             itemName:'HOME',
-            link:'/',
-            isActive:true
+            link:'',
+            isActive:false
         },
         {
             itemName:'ABOUT',
@@ -25,17 +25,17 @@ export class NavigationComponent{
         },
         {
             itemName:'SHOP',
-            link:'/',
+            link:'/jhcs',
             isActive:false
         },
         {
             itemName:'SIGN UP',
-            link:'/',
+            link:'/asdasd',
             isActive:false
         },
         {
             itemName:'SIGN IN',
-            link:'/',
+            link:'/fdsfs',
             isActive:false
         },
     ];

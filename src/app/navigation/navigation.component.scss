@@ -18,9 +18,10 @@
 
     background-color: rgba(48, 48, 48, 0.75);
   }
-  &-item:active{
-      color: red;
-    //background-color: rgba(48, 48, 48, 0.75);
-  }
 
+
+}
+.active{
+  color: red;
+  //background-color: rgba(48, 48, 48, 0.75);
 }
