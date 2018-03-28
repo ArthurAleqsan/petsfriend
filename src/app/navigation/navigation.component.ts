@@ -7,7 +7,6 @@ import {Component} from "@angular/core";
 })
 
 export class NavigationComponent{
-
     public navItems: Array<object> = [
         {
             itemName:'HOME',
@@ -16,12 +15,12 @@ export class NavigationComponent{
         },
         {
             itemName:'ABOUT',
-            link:'/',
+            link:'/about',
             isActive:false
         },
         {
             itemName:'PARTNERS',
-            link:'/',
+            link:'/partners',
             isActive:false
         },
         {
@@ -40,4 +39,5 @@ export class NavigationComponent{
             isActive:false
         },
     ]
+
 }
