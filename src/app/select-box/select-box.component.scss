@@ -1,0 +1,22 @@
+.select-box{
+  width: 50vw;
+  background-color: rgba(0,0,0,0.6);
+  margin: 0 auto;
+  position: relative;
+  height: 200px;
+  top:40vh;
+  display:flex;
+  &-animal{
+    width: 9vw;
+    margin: 0 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  &-animal-title{
+    color: #fff;
+    font-size: 20px;
+  }
+}

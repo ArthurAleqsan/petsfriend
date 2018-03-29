@@ -1,0 +1,11 @@
+<div class="select-box">
+  <div
+      class="select-box-animal"
+      *ngFor="let item of selectItems"
+      (click)="selectAnimal(item)"
+  >
+    <p class="select-box-animal-title">{{item.itemName}}</p>
+    <img src="{{item.img}}" alt="">
+
+  </div>
+</div>

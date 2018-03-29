@@ -8,6 +8,7 @@ import {RouterModule,Routes} from "@angular/router";
 // import {AboutComponent} from "./about/about.component";
 import { HomePageComponent } from './home-page/home-page.component';
 import { PartnersComponent } from './partners/partners.component';
+import { SelectBoxComponent } from './select-box/select-box.component';
 // import {FooterComponent} from "./footer/footer.component";
 
 
@@ -29,6 +30,7 @@ const appRoutes = [
     // AboutComponent,
     HomePageComponent,
     PartnersComponent,
+    SelectBoxComponent,
     // FooterComponent
   ],
   imports: [
