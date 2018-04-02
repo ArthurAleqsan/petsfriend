@@ -14,6 +14,6 @@ export class SelectBoxComponent{
         {'itemName':'SOMEONE ELSE','img':'./../../assets/images/selectBox/briefcase.png'},
     ];
     public selectAnimal(item:Object):void{
-        console.log(item)
+        console.log(item);
     }
 }
