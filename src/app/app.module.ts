@@ -4,12 +4,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {NavigationComponent} from "./navigation/navigation.component";
-import {RouterModule,Routes} from "@angular/router";
-// import {AboutComponent} from "./about/about.component";
+import {RouterModule} from "@angular/router";
 import { HomePageComponent } from './home-page/home-page.component';
 import { PartnersComponent } from './partners/partners.component';
 import { SelectBoxComponent } from './select-box/select-box.component';
-// import {FooterComponent} from "./footer/footer.component";
+import {HttpClientModule} from "@angular/common/http";
 
 
 const appRoutes = [
@@ -27,16 +26,14 @@ const appRoutes = [
   declarations: [
     AppComponent,
     NavigationComponent,
-    // AboutComponent,
     HomePageComponent,
     PartnersComponent,
     SelectBoxComponent,
-    // FooterComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
-
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

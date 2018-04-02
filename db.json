@@ -1,0 +1,24 @@
+{
+  "services":[
+    {
+      "pet_id":1,
+      "services":["dog walking","dog's medicine","accesuares","shop","dog's food","blog","temporarily keep"]
+    },
+    {
+      "pet_id":2,
+      "services":["cat's medicine","accesuares","shop","cat's food","blog","temporarily keep"]
+    },
+    {
+      "pet_id":3,
+      "services":["parrot's medicine","accesuares","shop","parrot's food","blog","temporarily keep"]
+    },
+    {
+      "pet_id":4,
+      "services":["accesuares","shop","fish's food","blog","temporarily keep"]
+    },
+    {
+      "pet_id":5,
+      "services":["medicine","accesuares","shop","food","blog","temporarily keep"]
+    }
+  ]
+}
