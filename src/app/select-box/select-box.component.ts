@@ -18,6 +18,7 @@ export class SelectBoxComponent{
         {'id':4,'itemName':'FISH','img':'./../../assets/images/selectBox/fish.png','isActive':false},
         {'id':5,'itemName':'SOMEONE ELSE','img':'./../../assets/images/selectBox/briefcase.png','isActive':false},
     ];
+
     constructor(private selectBoxService:SelectBoxService){
 
     }
@@ -33,5 +34,5 @@ export class SelectBoxComponent{
             );
             console.log(typeOfAnimal['services']);
         })
-    }
-}
+
+}}
