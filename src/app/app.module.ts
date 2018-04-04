@@ -9,6 +9,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { PartnersComponent } from './partners/partners.component';
 import { SelectBoxComponent } from './select-box/select-box.component';
 import {HttpClientModule} from "@angular/common/http";
+import {ActiveDirective} from "./active.directive";
 
 
 const appRoutes = [
@@ -29,6 +30,7 @@ const appRoutes = [
     HomePageComponent,
     PartnersComponent,
     SelectBoxComponent,
+    ActiveDirective,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

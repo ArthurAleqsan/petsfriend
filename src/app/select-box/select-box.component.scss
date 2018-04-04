@@ -1,4 +1,5 @@
 .select-box{
+
   width: 50vw;
   background-color: rgba(0,0,0,0.6);
   margin: 0 auto;
@@ -6,7 +7,7 @@
   height: 200px;
   top:40vh;
   display:flex;
-  &-animal{
+  &-animal-or-choose{
     width: 9vw;
     margin: 0 5px;
     text-align: center;
@@ -19,4 +20,13 @@
     color: #fff;
     font-size: 20px;
   }
+  &-services{
+    border-top:10px solid #AD2;
+  }
+}
+.actived{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: .5s all;
+  z-index: 10;
 }

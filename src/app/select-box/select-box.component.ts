@@ -14,6 +14,7 @@ export interface SelectItems {
 
 export class SelectBoxComponent{
     public selectedPet: object;
+    public typeOfPet = {};
 
     private selectItems: Array<object> = [
         {'id':1,'itemName':'DOG','img':'./../../assets/images/selectBox/dog.png','isActive':false},
@@ -28,11 +29,11 @@ export class SelectBoxComponent{
     }
 
     private selectPet(item){
-        let typeOfPet = {};
+
         this.selectBoxService.getServices().subscribe(services=>{
             services.map(responseObj=> {
                     if(responseObj['pet_id'] === item.id) {
-                        return typeOfPet = responseObj;
+                        return this.typeOfPet = responseObj;
                     }
                 }
             );
@@ -44,6 +45,8 @@ export class SelectBoxComponent{
         pet['isActive']=!pet['isActive'];
 
         this.selectedPet = pet;
+        console.log(this.selectedPet)
+        // console.log(this.typeOfPet)
         // pet['isActive']=!pet['isActive'];
     }
 
