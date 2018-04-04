@@ -2,19 +2,20 @@
   <div
       class="select-box-animal"
       *ngFor="let item of selectItems"
-      (click)="selectAnimal(item)"
+      (click)="selectPet(item)"
       activeChoice
   >
 
     <p class="select-box-animal-title">{{item.itemName}}</p>
     <img src="{{item.img}}" alt="">
   </div>
-  <div class="select-box-services" *ngIf="typeOfAnimal">
-    <div
-            class="select-box-services-choose"
-            *ngFor="let tapchka of typeOfAnimal['services']"
-    >
-      {{tapchka}}
-    </div>
-  </div>
+  <div class="select-box-services" *ngIf="selectedPet">
+
+    <!--<div-->
+            <!--class="select-box-services-choose"-->
+            <!--*ngFor="let tapchka of selectedPet['services']"-->
+    <!--&gt;-->
+      {{selectedPet |json}}
+    <!--</div>-->
+  <!--</div>-->
 </div>
