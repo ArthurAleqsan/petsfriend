@@ -16,7 +16,7 @@ export class SelectBoxComponent{
     public selectedPet: object;
     public typeOfPet = {};
 
-    private selectItems: Array<object> = [
+    public selectItems: Array<object> = [
         {'id':1,'itemName':'DOG','img':'./../../assets/images/selectBox/dog.png','isActive':false},
         {'id':2,'itemName':'CAT','img':'./../../assets/images/selectBox/cat.png','isActive':false},
         {'id':3,'itemName':'PARROT','img':'./../../assets/images/selectBox/parrot.png','isActive':false},
@@ -28,24 +28,29 @@ export class SelectBoxComponent{
 
     }
 
-    private selectPet(item){
+    // private selectPet(item){
 
-        this.selectBoxService.getServices().subscribe(services=>{
-            services.map(responseObj=> {
-                    if(responseObj['pet_id'] === item.id) {
-                        return this.typeOfPet = responseObj;
-                    }
-                }
-            );
-                // console.log(typeOfPet)
-            return this.toggleServices(item);
-        })
-    }
+    //     this.selectBoxService.getServices().subscribe(services=>{
+    //         services.map(responseObj=> {
+    //                 if(responseObj['pet_id'] === item.id) {
+    //                     return this.typeOfPet = responseObj;
+    //                 }
+    //             }
+    //         );
+    //         // console.log(typeOfPet)
+    //         this.toggleServices(item);
+    //     })
+    // }
     private toggleServices(pet){
-        pet['isActive']=!pet['isActive'];
 
-        this.selectedPet = pet;
-        console.log(this.selectedPet)
+        let previous: Object = this.selectItems.find(el => el['isActive'])
+        console.log(this.selectItems);
+        if (previous && previous !== pet) {
+            previous['isActive'] = !previous['isActive'];
+        }
+        pet['isActive'] = true;  
+        // this.selectedPet = pet;
+        //console.log(this.selectedPet)
         // console.log(this.typeOfPet)
         // pet['isActive']=!pet['isActive'];
     }

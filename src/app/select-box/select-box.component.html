@@ -3,8 +3,8 @@
       class="select-box-animal-or-choose"
 
       *ngFor="let item of selectItems"
-      (click)="selectPet(item)"
-      [ngClass]="{ actived: isActive}"
+      (click)="toggleServices(item)"
+      [ngClass]="{ actived: item.isActive}"
 
   >
 
