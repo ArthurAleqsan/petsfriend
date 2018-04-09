@@ -28,19 +28,19 @@ export class SelectBoxComponent{
 
     }
 
-    // private selectPet(item){
+    private selectPet(item){
 
-    //     this.selectBoxService.getServices().subscribe(services=>{
-    //         services.map(responseObj=> {
-    //                 if(responseObj['pet_id'] === item.id) {
-    //                     return this.typeOfPet = responseObj;
-    //                 }
-    //             }
-    //         );
-    //         // console.log(typeOfPet)
-    //         this.toggleServices(item);
-    //     })
-    // }
+        this.selectBoxService.getServices().subscribe(services=>{
+            services.map(responseObj=> {
+                    if(responseObj['pet_id'] === item.id) {
+                        return this.typeOfPet = responseObj;
+                    }
+                }
+            );
+            // console.log(typeOfPet)
+            this.toggleServices(item);
+        })
+    }
     private toggleServices(pet){
 
         let previous: Object = this.selectItems.find(el => el['isActive'])
