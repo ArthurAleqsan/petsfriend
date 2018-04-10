@@ -1,7 +1,5 @@
 import { Component,Input } from '@angular/core';
-import {Services} from "@angular/core/src/view";
 import {SelectBoxService} from "./select-box.service";
-import index from "@angular/cli/lib/cli";
 export interface SelectItems {
 
 }
@@ -14,7 +12,7 @@ export interface SelectItems {
 
 export class SelectBoxComponent{
     public selectedPet: object;
-    public typeOfPet = {};
+    public typeOfPet:object = {};
 
     private selectItems: Array<object> = [
         {'id':1,'itemName':'DOG','img':'./../../assets/images/selectBox/dog.png','isActive':false},
@@ -37,17 +35,13 @@ export class SelectBoxComponent{
                     }
                 }
             );
-                // console.log(typeOfPet)
-            return this.toggleServices(item);
+
+             this.toggleServices(item);
         })
     }
     private toggleServices(pet){
         pet['isActive']=!pet['isActive'];
-
         this.selectedPet = pet;
-        console.log(this.selectedPet)
-        // console.log(this.typeOfPet)
-        // pet['isActive']=!pet['isActive'];
     }
 
 }

@@ -4,10 +4,8 @@
 
       *ngFor="let item of selectItems"
       (click)="selectPet(item)"
-      [ngClass]="{ actived: isActive}"
-
   >
-
+    <!--[ngClass]="{ actived: isActive}"-->
     <p class="select-box-animal-title">{{item.itemName}}</p>
     <img src="{{item.img}}" alt="">
   </div>
@@ -19,6 +17,9 @@
           class="select-box-animal-or-choose"
           *ngFor="let service of typeOfPet.services"
   >
-    {{service}}
+    <p class="select-box-animal-title">
+      {{service}}
+    </p>
+
   </div>
 </div>

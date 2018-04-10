@@ -1,7 +1,10 @@
 <nav class="navigation-top">
 
-    <ul class="navigation-top-container">
-        <li *ngFor="let navItem of navItems">
+    <ul class="navigation-top-container" >
+        <li
+                *ngFor="let navItem of navItems"
+
+        >
             <a class="navigation-top-item" routerLink="{{navItem.link}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
                 {{navItem.itemName}}
             </a>

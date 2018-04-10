@@ -6,7 +6,7 @@ import { NgModel } from '@angular/forms';
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent  {
     // contact: Contact = {
     //     id: 1,
     //     name: 'Windstorm',
@@ -17,9 +17,7 @@ export class AboutComponent implements OnInit {
     constructor(){}
 
 
-    ngOnInit(): void {
-        throw new Error("Method not implemented.");
-    }
+
     get currentMessage(){
         
         return JSON.stringify(this.contact);
