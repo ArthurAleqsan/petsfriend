@@ -12,7 +12,8 @@ import { PartnersComponent } from './partners/partners.component';
 
 
 import { SelectBoxComponent } from './select-box/select-box.component';
-import {ActiveDirective} from "./active.directive";
+import {HoverDirective} from './hover.directive';
+import { MembersComponent } from './select-box/members/members.component';
 
 
 
@@ -22,8 +23,8 @@ const appRoutes = [
       component: HomePageComponent
     },
     {
-        path:'partners',
-        component:PartnersComponent
+        path: 'partners',
+        component: PartnersComponent
     },
 
 ];
@@ -36,7 +37,8 @@ const appRoutes = [
     // AboutComponent,
     PartnersComponent,
     SelectBoxComponent,
-    ActiveDirective,
+    HoverDirective,
+    MembersComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
