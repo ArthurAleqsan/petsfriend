@@ -43,10 +43,12 @@
                         Message is required!
                 </div> 
          </div>
-      <button type="submit">Sumbit</button>
+      <button type="submit"
+      (click)='addContact(contact)'
+      >Sumbit</button>
       </div>
      </div>
  <div>
      
-        <h1> {{currentMessage}}</h1>
+        <h1> {{contact.name}}</h1>
  </div>

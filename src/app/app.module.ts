@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import {NavigationComponent} from "./navigation/navigation.component";
 import { HomePageComponent } from './home-page/home-page.component';
 import { PartnersComponent } from './partners/partners.component';
-import { AboutComponent} from "./about/about.component";
+
 import { SelectBoxComponent } from './select-box/select-box.component';
 import {ActiveDirective} from "./active.directive";
 
@@ -23,10 +23,7 @@ const appRoutes = [
         path:'partners',
         component:PartnersComponent
     },
-    {
-      path:'about',
-      component:AboutComponent
-   }
+
 ];
 
 @NgModule({
@@ -34,7 +31,7 @@ const appRoutes = [
     AppComponent,
     NavigationComponent,
     HomePageComponent,
-    AboutComponent,
+    // AboutComponent,
     PartnersComponent,
     SelectBoxComponent,
     ActiveDirective,
