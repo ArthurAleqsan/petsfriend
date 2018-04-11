@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import { Contact } from '../contact'
+import { Contact } from '../contact';
 import { NgModel } from '@angular/forms';
 @Component({
     // selector:'router-outlet',
@@ -13,13 +13,12 @@ export class AboutComponent  {
     //     email:'',
     //     message:''
     //   };
-    contact=new Contact(1,'','','');
-    constructor(){}
+    contact = new Contact(1,'','','');
+    constructor() {}
 
 
 
-    get currentMessage(){
-        
+    get currentMessage() {
         return JSON.stringify(this.contact);
     }
 }
