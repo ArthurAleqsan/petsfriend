@@ -35,7 +35,6 @@ export class SelectBoxComponent{
                     }
                 }
             );
-
              this.toggleServices(item);
         })
     }
