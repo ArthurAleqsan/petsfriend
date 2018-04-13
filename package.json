@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "server": "json-server --watch db.json --port 3000",
+    "server": "json-server --watch db.json --port 3001",
     "start": "concurrently --kill-others \"ng serve\" \"npm run server\"",
     "build": "ng build --prod",
     "test": "ng test",

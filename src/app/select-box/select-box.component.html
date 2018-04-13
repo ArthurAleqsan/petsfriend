@@ -1,7 +1,12 @@
 <div class="select-box" >
-  <div activeChoice
-      class="select-box-animal-or-choose"
+    <div hoverChoice
+         class="select-box-animal-or-choose"
+         *ngFor="let item of selectItems"
+         (click)="selectPet(item)"
+         [ngClass]="{ actived: item.isActive}"
+    >
 
+<<<<<<< HEAD
       *ngFor="let item of selectItems"
       (click)="toggleServices(item)"
       [ngClass]="{ actived: item.isActive}"
@@ -11,14 +16,24 @@
     <p class="select-box-animal-title">{{item.itemName}}</p>
     <img src="{{item.img}}" alt="">
   </div>
+=======
+      <p class="select-box-animal-title">{{item.itemName}}</p>
+      <img src="{{item.img}}" alt="">
+    </div>
+>>>>>>> c63e78a8f0c90cc2a6cef3016606a3a2a64d4017
 
 </div>
+
 <div class="select-box-services select-box" *ngIf="selectedPet">
 
-  <div
-          class="select-box-animal-or-choose"
-          *ngFor="let service of typeOfPet.services"
-  >
-    {{service}}
-  </div>
+    <div
+            class="select-box-animal-or-choose"
+            *ngFor="let service of typeOfPet.services"
+    >
+      <p class="select-box-animal-title">
+        {{service}}
+      </p>
+
+    </div>
 </div>
+<app-members></app-members>

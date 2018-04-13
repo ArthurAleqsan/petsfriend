@@ -39,9 +39,4 @@ export class NavigationComponent{
             isActive:false
         },
     ];
-   // public activateTab(){
-   //      this.navItems['isActive'] = true;
-   //      console.log(555)
-   //  }
-
 }
