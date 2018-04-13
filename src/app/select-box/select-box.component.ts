@@ -48,6 +48,11 @@ export class SelectBoxComponent{
         console.log(this.selectedPet)
         // console.log(this.typeOfPet)
         // pet['isActive']=!pet['isActive'];
+        return this.scroll()
     }
 
+  private scroll() {
+      window.scrollBy(0,300);
+      console.log("scrolling")
+  }
 }
