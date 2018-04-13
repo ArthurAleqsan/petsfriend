@@ -1,9 +1,9 @@
-import {Directive, HostBinding, HostListener} from "@angular/core";
+import {Directive, HostBinding, HostListener} from '@angular/core';
 // import {SelectBoxService} from "./select-box/select-box.service";
 // import {SelectBoxComponent} from "./select-box/select-box.component";
 
 @Directive({
-    selector:'[hoverChoice]'
+    selector: '[hoverChoice]'
 })
 export class HoverDirective {
 
@@ -13,7 +13,7 @@ export class HoverDirective {
     @HostListener('mouseenter') onMouseEnter() {
         this.isHovered = true;
     }
-    @HostListener('mouseleave') onMouseLeave(){
+    @HostListener('mouseleave') onMouseLeave() {
         this.isHovered = false;
     }
 }

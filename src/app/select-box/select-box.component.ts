@@ -3,7 +3,7 @@ import {SelectBoxService} from './select-box.service';
 
 @Component({
   selector: 'app-select-box',
-  providers:[SelectBoxService],
+  providers: [SelectBoxService],
   templateUrl: './select-box.component.html',
   styleUrls: ['./select-box.component.scss']
 })
@@ -20,7 +20,7 @@ export class SelectBoxComponent {
         {'id': 5, 'itemName': 'SOMEONE ELSE', 'img': './../../assets/images/selectBox/briefcase.png', 'isActive': false},
     ];
 
-    constructor(private selectBoxService: SelectBoxService ){
+    constructor(private selectBoxService: SelectBoxService ) {
 
     }
 
@@ -40,7 +40,7 @@ export class SelectBoxComponent {
 
     private toggleServices(pet: Object) {
 
-        const previous: Object = this.selectItems.find(el => el['isActive'] === true);
+        const previous: Object = this.selectItems.find(el => el['isActive']);
         if (previous && previous !== pet) {
             previous['isActive'] = !previous['isActive'];
         }

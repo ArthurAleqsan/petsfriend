@@ -14,6 +14,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { SelectBoxComponent } from './select-box/select-box.component';
 import {HoverDirective} from './hover.directive';
 import { MembersComponent } from './select-box/members/members.component';
+import { RatingComponent } from './rating/rating.component';
 
 
 
@@ -39,6 +40,7 @@ const appRoutes = [
     SelectBoxComponent,
     HoverDirective,
     MembersComponent,
+    RatingComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs/Observable";
-import "rxjs/add/operator/map";
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs/Observable';
 
-export interface Services{
-  pet_id
-  services
+
+export interface Services {
+  pet_id;
+  services;
 }
 
 @Injectable()
 export class SelectBoxService {
 
 
-  constructor(private HttpClient:HttpClient) { }
+  constructor(private HttpClient: HttpClient) { }
 
-  getServices():Observable<any>{
+  getServices(): Observable <any> {
     return this.HttpClient.get('http://localhost:3001/services')
   }
 }
