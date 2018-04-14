@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component} from '@angular/core';
 
 @Component({
     selector: 'app-navigation',
@@ -6,32 +6,32 @@ import {Component} from "@angular/core";
     styleUrls: ['./navigation.component.scss']
 })
 
-export class NavigationComponent{
+export class NavigationComponent {
     public navItems: Array<object> = [
         {
-            itemName:'HOME',
-            link:'',
-            isActive:false
+            itemName: 'HOME',
+            link: '',
+            isActive: false
         },
         {
-            itemName:'ABOUT',
-            link:'/about',
-            isActive:false
+            itemName: 'ABOUT',
+            link: '/about',
+            isActive: false
         },
         {
-            itemName:'PARTNERS',
-            link:'/partners',
-            isActive:false
+            itemName: 'PARTNERS',
+            link: '/partners',
+            isActive: false
         },
         {
-            itemName:'SHOP',
-            link:'/jhcs',
-            isActive:false
+            itemName: 'SHOP',
+            link: '/jhcs',
+            isActive: false
         },
         {
-            itemName:'SIGN UP',
-            link:'/asdasd',
-            isActive:false
+            itemName: 'SIGN UP',
+            link: '/asdasd',
+            isActive: false
         },
         {
             itemName:'SIGN IN',

@@ -6,21 +6,9 @@
          [ngClass]="{ actived: item.isActive}"
     >
 
-<<<<<<< HEAD
-      *ngFor="let item of selectItems"
-      (click)="toggleServices(item)"
-      [ngClass]="{ actived: item.isActive}"
-
-  >
-
-    <p class="select-box-animal-title">{{item.itemName}}</p>
-    <img src="{{item.img}}" alt="">
-  </div>
-=======
       <p class="select-box-animal-title">{{item.itemName}}</p>
       <img src="{{item.img}}" alt="">
     </div>
->>>>>>> c63e78a8f0c90cc2a6cef3016606a3a2a64d4017
 
 </div>
 
@@ -36,4 +24,4 @@
 
     </div>
 </div>
-<app-members></app-members>
+<app-members *ngIf="selectedPet"></app-members>
