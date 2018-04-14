@@ -1,11 +1,12 @@
-import { Component, } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {SelectBoxService} from './select-box.service';
+import {MembersComponent} from './members/members.component';
 
 @Component({
   selector: 'app-select-box',
-  providers: [SelectBoxService],
   templateUrl: './select-box.component.html',
-  styleUrls: ['./select-box.component.scss']
+  styleUrls: ['./select-box.component.scss'],
+
 })
 
 export class SelectBoxComponent {
@@ -20,7 +21,7 @@ export class SelectBoxComponent {
         {'id': 5, 'itemName': 'SOMEONE ELSE', 'img': './../../assets/images/selectBox/briefcase.png', 'isActive': false},
     ];
 
-    constructor(private selectBoxService: SelectBoxService ) {
+    constructor(private selectBoxService: SelectBoxService) {
 
     }
 
@@ -35,6 +36,7 @@ export class SelectBoxComponent {
             );
             this.selectedPet = this.typeOfPet;
              this.toggleServices(item);
+
         });
     }
 

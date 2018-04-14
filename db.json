@@ -20,11 +20,133 @@
       "pet_id":5,
       "services":["medicine","accesuares","shop","food","blog","temporarily keep"]
     }
+  ],
+  "members":[
+    {
+      "id": 1,
+      "pet_id": 1,
+      "name": "Tapchka",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":25,
+      "rate":4,
+      "title": "dog walker",
+      "cost": 22,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+      "id": 2,
+      "pet_id": 1,
+      "name": "Tapchka 2",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":52,
+      "rate":2,
+      "title": "test 2",
+      "cost": 20,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+      "id": 3,
+      "pet_id": 2,
+      "name": "Tapchka 3",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":25,
+      "rate":2,
+      "title": "dog walker",
+      "cost": 22,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+      "id": 4,
+      "pet_id": 5,
+      "name": "Tapchka 4",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":25,
+      "rate":5,
+      "title": "dog walker",
+      "cost": 22,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+      "id": 5,
+      "pet_id": 2,
+      "name": "Tapchka 5",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":25,
+      "rate":4,
+      "title": "dog walker",
+      "cost": 22,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+      "id": 6,
+      "pet_id": 3,
+      "name": "Tapchka 6",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":25,
+      "rate":4,
+      "title": "dog walker",
+      "cost": 22,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+      "id": 7,
+      "pet_id": 5,
+      "name": "Tapchka 7",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":25,
+      "rate":4,
+      "title": "dog walker",
+      "cost": 22,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+      "id": 8,
+      "pet_id": 1,
+      "name": "Tapchka 8",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":25,
+      "rate":4,
+      "title": "dog walker",
+      "cost": 22,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    },
+    {
+      "id": 9,
+      "pet_id": 4,
+      "name": "Tapchka 9",
+      "city": "Yerevan",
+      "phone": "+37493000000",
+      "age":25,
+      "rate":4,
+      "title": "dog walker",
+      "cost": 22,
+      "large_img": "large-image",
+      "small_img": "small-image",
+      "desc": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum"
+    }
   ]
-//  "members":[
-//    {
-//      "member_id":1,
-//      "services":["dog walking","dog's medicine","accesuares","shop","dog's food","blog","temporarily keep"]
-//    },
-//  ]
 }
