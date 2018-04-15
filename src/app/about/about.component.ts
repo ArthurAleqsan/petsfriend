@@ -4,7 +4,7 @@ import { NgModel } from '@angular/forms';
 
 
 @Component({
-    // selector:'router-outlet',
+    selector: 'app-about',
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.scss']
 })
@@ -19,8 +19,7 @@ export class AboutComponent {
 
   contact = new Contact(1, '', '', '');
 
-  constructor() {
-  }
+  constructor() {}
 
 
   get currentMessage() {

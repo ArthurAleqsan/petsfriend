@@ -1,54 +1,52 @@
     <div class="container">
         <div class="aboutUs">
             <h1>About Us</h1>
-          <p>  consectetur adipisicing elit.
-                Ab aliquam doloremque facilis fuga fugiat fugit impedit nulla officia,
-                pariatur perferendis provident quasi quibusdam quidem quod repellat ullam vero?
-                Sed, voluptatem.consectetur adipisicing elit.
-                Ab aliquam doloremque facilis fuga fugiat fugit impedit nulla officia,
-                pariatur perferendis provident quasi quibusdam quidem quod repellat ullam vero?
-                Sed, voluptatem.</p>
+                <p>  
+					consectetur adipisicing elit.
+                    Ab aliquam doloremque facilis fuga fugiat fugit impedit nulla officia,
+                    pariatur perferendis provident quasi quibusdam quidem quod repellat ullam vero?
+                    Sed, voluptatem.consectetur adipisicing elit.
+                    Ab aliquam doloremque facilis fuga fugiat fugit impedit nulla officia,
+                    pariatur perferendis provident quasi quibusdam quidem quod repellat ullam vero?
+                    Sed, voluptatem.
+                </p>
         </div>
      
-      <div class="contactForm">
-          <h1>Contact Us</h1>
-          <label for="name">Name:</label>
-          <input type="text" placeholder="Name" required [(ngModel)]="contact.name" name="name" #name="ngModel" minlength="3" >
-          <div *ngIf="name.errors && (name.dirty || name.touched)"> 
-                <div [hidden]="!name.errors.required">
-                        Name is required!
-                </div> 
-                <div [hidden]="!name.errors.minlength">
-                        Name must be at least 3 characters long!
-                </div>
-          </div>
-
-          <label for="email">Email:</label>
-          <input type="text" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="contact.email" name="email" #email="ngModel" >
-           <div *ngIf="email.errors && (email.dirty || email.touched)"> 
-
-          <div [hidden]="!email.errors.required">
-           Email is required!
-          </div>  
-          <div [hidden]="!email.errors.pattern">
-               Email must have a @ chracter!
-        </div> 
+        <div class="contactForm">
+			<h1>Contact Us</h1><br>
+				<label for="name">Name:</label>
+				<input type="text" placeholder="Name" required [(ngModel)]="contact.name" name="name" #name="ngModel" minlength="3" >
+				<div *ngIf="name.errors && (name.dirty || name.touched)"> 
+					<div [hidden]="!name.errors.required">
+						Name is required!
+					</div> 
+					<div [hidden]="!name.errors.minlength">
+						Name must be at least 3 characters long!
+					</div>
+				</div>
+				<label for="email">Email:</label>
+				<input type="text" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="contact.email" name="email" #email="ngModel" >
+				<div *ngIf="email.errors && (email.dirty || email.touched)"> 
+					<div [hidden]="!email.errors.required">
+						Email is required!
+					</div>  
+					<div [hidden]="!email.errors.pattern">
+						Email must have a @ chracter!
+					</div> 
+				</div>
+				<label for="message">Message:</label>
+				<textarea rows="4" cols="30"  type="text" placeholder="Message" required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
+				<div *ngIf="message.errors && (message.dirty || message.touched)"> 
+					<div [hidden]="!message.errors.required">
+						Message is required!
+					</div> 
+				</div>
+				<button type="submit"
+					(click)='addContact(contact)'
+					>Sumbit
+				</button>
         </div>
-     
-     
-          <label for="message">Message:</label>
-          <textarea rows="4" cols="30"  type="text" placeholder="Message" required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
-          <div *ngIf="message.errors && (message.dirty || message.touched)"> 
-                <div [hidden]="!message.errors.required">
-                        Message is required!
-                </div> 
-         </div>
-      <button type="submit"
-      (click)='addContact(contact)'
-      >Sumbit</button>
-      </div>
      </div>
  <div>
-     
         <h1> {{contact.name}}</h1>
  </div>
