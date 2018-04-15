@@ -21,6 +21,9 @@ export class AboutComponent {
 
   constructor() {}
 
+  onSubmit() {
+    alert("Submitted!!!");
+  }
 
   get currentMessage() {
     return JSON.stringify(this.contact);

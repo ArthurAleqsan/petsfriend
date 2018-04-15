@@ -11,9 +11,10 @@
                     Sed, voluptatem.
                 </p>
         </div>
-     
-        <div class="contactForm">
+
+        <div class="contact-container">
 			<h1>Contact Us</h1><br>
+				<form class="contact-form" #contactForm (ngSubmit)="onSubmit()" action="#">
 				<label for="name">Name:</label>
 				<input type="text" placeholder="Name" required [(ngModel)]="contact.name" name="name" #name="ngModel" minlength="3" >
 				<div *ngIf="name.errors && (name.dirty || name.touched)"> 
@@ -42,10 +43,11 @@
 					</div> 
 				</div>
 				<button type="submit"
-					(click)='addContact(contact)'
-					>Sumbit
+					value="Submit"
+					>Submit
 				</button>
-        </div>
+				</form>
+			</div>
      </div>
  <div>
         <h1> {{contact.name}}</h1>

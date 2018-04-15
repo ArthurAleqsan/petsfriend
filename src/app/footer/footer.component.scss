@@ -1,10 +1,21 @@
-.container {
+footer {
     background-color: black;
-    color: white;
     height: 100px;
+    color: white;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
 }
+// .container {
+//     width: 100%;
+//     position: absolute;
+//     display: flex;
+//     flex-direction: row;
+// }
+// section {
+//     display: flex;
+//     flex-direction: column;
+// }
 ul {
     list-style-type: none;
 }

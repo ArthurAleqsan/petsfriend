@@ -1,19 +1,27 @@
 .container {
    display:flex;
    flex-direction: row;
-   justify-content:center;
+   justify-content: center;
+   overflow: auto;
 }
 .aboutUs {
     font-size:20px;
     margin:150px 0 150px 150px;
 }
-.contactForm {
-   display:flex;
-   flex-direction: column;
-   margin:150px;
+.contact {
+    &-container {
+        display:flex;
+        flex-direction: column;
+        margin:150px;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+    }
 }
 input {
     box-sizing: border-box;
+    border-color: black;
     height:30px;
     width:27vw;
     margin-bottom: 36px;
@@ -21,16 +29,15 @@ input {
 label {
     margin-bottom: 10px;
 }
-button {
+button[type=submit] {
     width:100px;
     height:30px;
     border-radius: 3px;
     margin-top:10px;
     cursor: pointer;
 }
-.form {
-    display:flex;
-    flex-direction: column;
-    margin:150px;
+textarea {
+    resize: vertical;
 }
+
 
