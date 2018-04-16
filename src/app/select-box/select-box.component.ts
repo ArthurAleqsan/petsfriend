@@ -12,6 +12,7 @@ import {MembersComponent} from './members/members.component';
 export class SelectBoxComponent {
     public selectedPet: object;
     public typeOfPet: object = {};
+    public icons: Array<string>=[];
 
     public selectItems: Array<object> = [
         {'id': 1, 'itemName': 'DOG', 'img': './../../assets/images/selectBox/dog.png', 'isActive': false},
@@ -35,6 +36,10 @@ export class SelectBoxComponent {
                 }
             );
             this.selectedPet = this.typeOfPet;
+            this.icons=this.typeOfPet['icons'];
+           // this.icons.map()
+
+            console.log( this.icons);
              this.toggleServices(item);
 
         });

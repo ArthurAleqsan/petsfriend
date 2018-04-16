@@ -3,10 +3,11 @@
   height: 60px;
   &-container{
     display:flex ;
-    justify-content: space-around;
+    justify-content:center;
     li{
       list-style-type: none;
       padding: 20px;
+      margin:0 40px;
       font-size: 20px;
     }
   }

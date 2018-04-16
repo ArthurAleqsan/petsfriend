@@ -2,7 +2,8 @@
   "services":[
     {
       "pet_id":1,
-      "services":["dog walking","dog's medicine","accesuares","shop","dog's food","blog","temporarily keep"]
+      "services":["dog walking","dog's medicine","accesuares","shop","dog's food","blog","temporarily keep"],
+      "icons":["dog-walking.png","dog-medicine.png","dog-accessories.png", "shop.png","dog-food.png","blog.png","temporarily keep.png"],
     },
     {
       "pet_id":2,
