@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer {
     background-color: black;
     height: 100px;
@@ -21,4 +22,47 @@ ul {
 }
 h3 {
     color: #300b04;
+=======
+.footer {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    height:100px;
+    background-color:black;
+    // position: absolute;
+    // bottom: 0%;
+        &__socialNetwork {
+            img {
+                margin:7px;
+            }
+        }
+        &__navigation {
+            &-list {
+                display:flex;
+                list-style: none;
+            }
+            &-link {
+                color:white;
+                align-items: center;
+                margin:5px;
+                text-decoration: none;
+            }
+        }
+        &__date {
+            color:white;
+            margin-top:20px;
+            text-align: center;
+        }
+        &__bankCards {
+            img {
+                margin:7px;
+            }
+        }
+        
+}
+.active {
+    color:red;
+>>>>>>> 301ad26465e1cfa1218a46b39c0f324ea0ba3e25
 }

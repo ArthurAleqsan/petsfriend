@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer class="container">
         <section class="About">
             <h3>About</h3>
@@ -24,3 +25,37 @@
         </section>
         <summary>&#169;Copyrights Reserved</summary>
 </footer>
+=======
+<div class="footer">
+    <div class="footer__socialNetwork">
+        <img src="./../../assets/images/footer-icons/twitter-icon.png" alt="twitter" >
+        <img src="./../../assets/images/footer-icons/facebook-icon.png" alt="facebook" >
+        <img src="./../../assets/images/footer-icons/gmail-icon.png" alt="gmail" >
+        <img src="./../../assets/images/footer-icons/instagram-icon.png" alt="instagram" >
+        
+    </div>
+    <div class="footer__navigation">
+        <ul class="footer__navigation-list" >
+            <li
+                    *ngFor="let navItem of navItems"
+            >
+                <a class="footer__navigation-link" routerLink="{{navItem.link}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        {{navItem.itemName}}
+                </a>
+               
+            </li>
+       </ul>
+        <div class="footer__date">
+            <p>© 2018 PetsFriend</p>
+        </div>
+
+    </div>
+    <div class="footer__bankCards">
+        <img src="./../../assets/images/footer-icons/paypal-icon.png" alt="twitter" >
+        <img src="./../../assets/images/footer-icons/maestro-icon.png" alt="twitter" >
+        <img src="./../../assets/images/footer-icons/visa-icon.png" alt="twitter" >
+
+    </div>
+
+</div>
+>>>>>>> 301ad26465e1cfa1218a46b39c0f324ea0ba3e25

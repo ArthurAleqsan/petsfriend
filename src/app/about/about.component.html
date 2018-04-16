@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     <div class="container">
         <div class="aboutUs">
             <h1>About Us</h1>
@@ -52,3 +53,69 @@
  <div>
         <h1> {{contact.name}}</h1>
  </div>
+=======
+<div class="about">
+        <div class="about__information">
+                <h1>About Us</h1>
+                <p>  consectetur adipisicing elit.
+                        Ab aliquam doloremque facilis fuga fugiat fugit impedit nulla officia,
+                        pariatur perferendis provident quasi quibusdam quidem quod repellat ullam vero?
+                        Sed, voluptatem.consectetur adipisicing elit.
+                        Ab aliquam doloremque facilis fuga fugiat fugit impedit nulla officia,
+                        pariatur perferendis provident quasi quibusdam quidem quod repellat ullam vero?
+                        Sed, voluptatem.
+                </p>
+        </div>
+     
+        <div class="about__contactForm">
+                <h1>Contact Us</h1>
+                <form action="" #contactForm="ngForm">
+                        <div class="about__contactForm-position">
+                                <label for="name">Name*:</label>
+                                <input type="text" placeholder="Name" required
+                                 [(ngModel)]="contact.name" name="name" #name="ngModel" minlength="3"
+                                 >
+                                <div *ngIf="name.errors && (name.dirty || name.touched)"> 
+                                        <div *ngIf="name.errors.required" class="error">
+                                                Name is required!
+                                        </div> 
+                                        <div *ngIf="name.errors.minlength" class="error"> 
+                                                Name must be at least 3 characters long!
+                                        </div>
+                                </div>
+                         </div>
+                         <div  class="about__contactForm-position">
+                                <label for="email">Email*:</label>
+                                <input type="text" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
+                                [(ngModel)]="contact.email" name="email" #email="ngModel"
+                                 >
+                                <div *ngIf="email.errors && (email.dirty || email.touched)"> 
+
+                                        <div *ngIf="email.errors.required" class="error">
+                                        Email is required!
+                                        </div>  
+                                        <div *ngIf="email.errors.pattern" class="error">
+                                        Please enter a valid email address!
+                                        </div> 
+                                </div>
+                          </div>     
+                         <div class="about__contactForm-position">
+                                <label for="message">Message*:</label>
+                                <textarea rows="5"  type="text" placeholder="Message" required
+                                 [(ngModel)]="contact.message" name="message" #message="ngModel">
+                                </textarea>
+                                <div *ngIf="message.errors && (message.dirty || message.touched)"> 
+                                        <div *ngIf="message.errors.required" class="error">
+                                                Message is required!
+                                        </div> 
+                                </div>
+                                <button [disabled]="contactForm.invalid"
+                                (click)="currentMessage()"
+                                >Submit</button>
+                           </div>
+                 </form>
+
+        </div>   
+         
+</div>
+>>>>>>> 301ad26465e1cfa1218a46b39c0f324ea0ba3e25
