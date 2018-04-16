@@ -8,13 +8,9 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PartnersComponent } from './partners/partners.component';
-<<<<<<< HEAD
-import { AboutComponent }  from './about/about.component'
-=======
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 
->>>>>>> 301ad26465e1cfa1218a46b39c0f324ea0ba3e25
 
 
 import { SelectBoxComponent } from './select-box/select-box.component';
@@ -23,7 +19,7 @@ import { MembersComponent } from './select-box/members/members.component';
 import { RatingComponent } from './rating/rating.component';
 import { MembersService } from './select-box/members/members.service';
 import { SelectBoxService } from './select-box/select-box.service';
-import { FooterComponent } from './footer/footer.component';
+
 
 
 const appRoutes = [
@@ -38,11 +34,7 @@ const appRoutes = [
     {
       path: 'about',
       component: AboutComponent
-<<<<<<< HEAD
-    }
-=======
   },
->>>>>>> 301ad26465e1cfa1218a46b39c0f324ea0ba3e25
 ];
 
 @NgModule({

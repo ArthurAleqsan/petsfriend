@@ -4,11 +4,7 @@ import { NgModel } from '@angular/forms';
 
 
 @Component({
-<<<<<<< HEAD
     selector: 'app-about',
-=======
-    selector:'',
->>>>>>> 301ad26465e1cfa1218a46b39c0f324ea0ba3e25
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.scss']
 })
