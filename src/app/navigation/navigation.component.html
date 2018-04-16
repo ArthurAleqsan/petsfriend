@@ -1,6 +1,6 @@
-<nav class="navigation-top">
+<nav class="navigation-top" [ngClass] = "{ scrollup: isScrolled }">
 
-    <ul class="navigation-top-container" >
+    <ul class="navigation-top-container">
         <li
                 *ngFor="let navItem of navItems"
 

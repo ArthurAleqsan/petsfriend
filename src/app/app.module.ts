@@ -58,7 +58,7 @@ const appRoutes = [
   ],
   providers: [
     MembersService,
-    SelectBoxService
+    SelectBoxService,
   ],
   bootstrap: [AppComponent]
 })

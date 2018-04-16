@@ -1,9 +1,12 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-navigation',
     templateUrl: './navigation.component.html',
-    styleUrls: ['./navigation.component.scss']
+    styleUrls: ['./navigation.component.scss'],
+    host: {
+        '(window:scroll)': 'onScroll($event)'
+    }
 })
 
 export class NavigationComponent {
@@ -37,6 +40,39 @@ export class NavigationComponent {
             itemName:'SIGN IN',
             link:'/fdsfs',
             isActive:false
-        },
+        }
     ];
+
+    public isScrolled: boolean = false;
+    public currPos: number = 0;
+    public startPos: number = 0;
+    public changePos: number = 30;
+
+    constructor() {}
+
+    ngOnInit() {
+        let self = this;
+        window.onload = function() {
+            setTimeout(() => {
+                self.isScrolled = false; //  chgitem grdon tarberaka te che bayc ha. if you wanna k now why i did it, call me!
+            },0);
+            //self.isScrolled = false;
+        }
+    }
+
+    onScroll(evt) {
+        this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
+
+        if (this.currPos >= this.changePos) {
+            this.isScrolled = true;
+        } 
+        else {
+            this.isScrolled = false;
+        }
+        this.changePos = this.currPos;
+    }
 }
+
+
+
+
