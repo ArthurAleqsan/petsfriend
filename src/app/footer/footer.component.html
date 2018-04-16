@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="footer">
+    <div class="footer__socialNetwork">
+        <img src="./../../assets/images/footer-icons/twitter-icon.png" alt="twitter" >
+        <img src="./../../assets/images/footer-icons/facebook-icon.png" alt="facebook" >
+        <img src="./../../assets/images/footer-icons/gmail-icon.png" alt="gmail" >
+        <img src="./../../assets/images/footer-icons/instagram-icon.png" alt="instagram" >
+        
+    </div>
+    <div class="footer__navigation">
+        <ul class="footer__navigation-list" >
+            <li
+                    *ngFor="let navItem of navItems"
+            >
+                <a class="footer__navigation-link" routerLink="{{navItem.link}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        {{navItem.itemName}}
+                </a>
+               
+            </li>
+       </ul>
+        <div class="footer__date">
+            <p>© 2018 PetsFriend</p>
+        </div>
 
-</body>
-</html>
+    </div>
+    <div class="footer__bankCards">
+        <img src="./../../assets/images/footer-icons/paypal-icon.png" alt="twitter" >
+        <img src="./../../assets/images/footer-icons/maestro-icon.png" alt="twitter" >
+        <img src="./../../assets/images/footer-icons/visa-icon.png" alt="twitter" >
+
+    </div>
+
+</div>

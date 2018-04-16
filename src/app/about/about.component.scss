@@ -1,32 +1,43 @@
-.container {
-   display:flex;
-   flex-direction: row;
-   justify-content:center;
-}
-.aboutUs {
-    font-size:20px;
-    margin:150px 0 150px 150px;
-}
-.contactForm {
-   display:flex;
-   flex-direction: column;
-   margin:150px;
+.about {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    &__information{
+        font-size:20px;
+        margin:150px 0 150px 150px;
 
-   
-}
-input {
-    box-sizing: border-box;
-    height:30px;
-    width:27vw;
-    margin-bottom: 36px;
-}
-label {
-    margin-bottom: 10px;
-}
-button {
-    width:100px;
-    height:30px;
-    border-radius: 3px;
-    margin-top:10px;
+    }
+    &__contactForm {
+       display:flex;
+       flex-direction: column;
+       justify-content:center;
+       margin:150px;
+       &-position {
+        margin-top:30px;
 
+       }
+        input {
+            box-sizing: border-box;
+            height:30px;
+            width:27vw;
+            border:1px solid gray;
+        }
+        textarea {
+            box-sizing: border-box;
+            border:1px solid gray;
+            width:27vw;
+        }
+        button {
+            width:6vw;
+            height:30px;
+            margin-top:20px;
+            background-color:darkgrey;
+        }
+        
+
+    }
+
+}
+.error {
+    color:red;
 }

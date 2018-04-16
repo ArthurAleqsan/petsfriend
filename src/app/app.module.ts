@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PartnersComponent } from './partners/partners.component';
+import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -29,7 +31,10 @@ const appRoutes = [
         path: 'partners',
         component: PartnersComponent
     },
-
+    {
+      path: 'about',
+      component: AboutComponent
+  },
 ];
 
 @NgModule({
@@ -37,12 +42,13 @@ const appRoutes = [
     AppComponent,
     NavigationComponent,
     HomePageComponent,
-    // AboutComponent,
+    AboutComponent,
     PartnersComponent,
     SelectBoxComponent,
     HoverDirective,
     MembersComponent,
     RatingComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

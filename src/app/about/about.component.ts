@@ -4,18 +4,13 @@ import { NgModel } from '@angular/forms';
 
 
 @Component({
-    // selector:'router-outlet',
+    selector:'',
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.scss']
 })
 
 export class AboutComponent {
-  // contact: Contact = {
-  //     id: 1,
-  //     name: 'Windstorm',
-  //     email:'',
-  //     message:''
-  //   };
+
 
   contact = new Contact(1, '', '', '');
 
@@ -23,8 +18,9 @@ export class AboutComponent {
   }
 
 
-  get currentMessage() {
-    return JSON.stringify(this.contact);
+ currentMessage() {
+    //return JSON.stringify(this.contact);
+    console.log(this.contact)
   }
 }
 
