@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import {SelectBoxService} from './select-box.service';
 import {MembersComponent} from './members/members.component';
 
@@ -37,10 +37,8 @@ export class SelectBoxComponent {
             );
             this.selectedPet = this.typeOfPet;
             this.icons=this.typeOfPet['icons'];
-           // this.icons.map()
-
-            console.log( this.icons);
-             this.toggleServices(item);
+            this.icons=this.icons.map(url=>"./../../assets/images/services-icons/"+url);
+            this.toggleServices(item);
 
         });
     }

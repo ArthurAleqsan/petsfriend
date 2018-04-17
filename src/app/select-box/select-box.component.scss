@@ -24,6 +24,12 @@
   &-services{
     border-top:10px solid #AD2;
     margin-top: 10px;
+    display:flex;
+    justify-content: column;
+    &-icons {
+
+
+    }
   }
 }
 .hovered{
@@ -37,4 +43,20 @@
   box-shadow: 0 0 20px rgba(150, 180, 50, 0.5);
   transition: .5s all;
   z-index: 10;
+}
+.icons {
+  display:flex;
+  justify-content: space-around;
+
+}
+.services {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color:white;
+}
+
+.service {
+  display:flex;
+  flex-direction: column
 }
