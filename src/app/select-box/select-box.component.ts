@@ -1,16 +1,18 @@
-import { Component, } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {SelectBoxService} from './select-box.service';
+import {MembersComponent} from './members/members.component';
 
 @Component({
   selector: 'app-select-box',
-  providers: [SelectBoxService],
   templateUrl: './select-box.component.html',
-  styleUrls: ['./select-box.component.scss']
+  styleUrls: ['./select-box.component.scss'],
+
 })
 
 export class SelectBoxComponent {
     public selectedPet: object;
     public typeOfPet: object = {};
+    
 
     public selectItems: Array<object> = [
         {'id': 1, 'itemName': 'DOG', 'img': './../../assets/images/selectBox/dog.png', 'isActive': false},
@@ -20,7 +22,7 @@ export class SelectBoxComponent {
         {'id': 5, 'itemName': 'SOMEONE ELSE', 'img': './../../assets/images/selectBox/briefcase.png', 'isActive': false},
     ];
 
-    constructor(private selectBoxService: SelectBoxService ) {
+    constructor(private selectBoxService: SelectBoxService) {
 
     }
 
@@ -35,22 +37,11 @@ export class SelectBoxComponent {
             );
             this.selectedPet = this.typeOfPet;
              this.toggleServices(item);
+
         });
     }
 
-<<<<<<< HEAD
-        this.selectedPet = pet;
-        console.log(this.selectedPet)
-        // console.log(this.typeOfPet)
-        // pet['isActive']=!pet['isActive'];
-        return this.scroll()
-    }
 
-  private scroll() {
-      window.scrollBy(0,300);
-      console.log("scrolling")
-  }
-=======
     private toggleServices(pet: Object) {
 
         const previous: Object = this.selectItems.find(el => el['isActive']);
@@ -59,5 +50,5 @@ export class SelectBoxComponent {
         }
         pet['isActive'] = true;
     }
->>>>>>> 402fdfa62a1832d1549b456a0b99cdc5ecf31ea7
+
 }
