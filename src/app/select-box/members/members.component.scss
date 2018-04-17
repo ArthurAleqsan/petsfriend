@@ -1,0 +1,14 @@
+.members-main-content {
+  display: flex;
+  height: auto;
+  width: 60vw;
+  background-color: rgba(22, 19, 19, 0.61);
+  margin: 0 auto;
+  margin-top: 15px;
+
+}
+// @for $i from 1 through 2{
+//   .members-main-content:nth-child(#{$i}){
+//     width: 60vw;
+//   }
+// }

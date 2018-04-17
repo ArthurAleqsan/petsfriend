@@ -1,14 +1,42 @@
+<<<<<<< HEAD
 <div class="select-box">
     <div activeChoice class="select-box-animal-or-choose" *ngFor="let item of selectItems" (click)="selectPet(item)" [ngClass]="{ actived: isActive}">
 
         <p class="select-box-animal-title">{{item.itemName}}</p>
         <img src="{{item.img}}" alt="">
+=======
+<div class="select-box" >
+    <div hoverChoice
+         class="select-box-animal-or-choose"
+         *ngFor="let item of selectItems"
+         (click)="selectPet(item)"
+         [ngClass]="{ actived: item.isActive}"
+    >
+
+      <p class="select-box-animal-title">{{item.itemName}}</p>
+      <img src="{{item.img}}" alt="">
+>>>>>>> 402fdfa62a1832d1549b456a0b99cdc5ecf31ea7
     </div>
 
 </div>
+
 <div class="select-box-services select-box" *ngIf="selectedPet">
 
+<<<<<<< HEAD
     <div class="select-box-animal-or-choose" *ngFor="let service of typeOfPet.services">
         {{service}}
     </div>
 </div>
+=======
+    <div
+            class="select-box-animal-or-choose"
+            *ngFor="let service of typeOfPet.services"
+    >
+      <p class="select-box-animal-title">
+        {{service}}
+      </p>
+
+    </div>
+</div>
+<app-members></app-members>
+>>>>>>> 402fdfa62a1832d1549b456a0b99cdc5ecf31ea7

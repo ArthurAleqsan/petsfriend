@@ -1,14 +1,14 @@
 .select-box{
 
-  width: 50vw;
+  width: 60vw;
   background-color: rgba(0,0,0,0.6);
   margin: 0 auto;
   position: relative;
-  height: 200px;
-  top:40vh;
+  height: 250px;
+  //top:40vh;
   display:flex;
   &-animal-or-choose{
-    width: 9vw;
+    width: 11vw;
     margin: 0 5px;
     text-align: center;
     display: flex;
@@ -19,14 +19,22 @@
   &-animal-title{
     color: #fff;
     font-size: 20px;
+    text-transform: capitalize;
   }
   &-services{
     border-top:10px solid #AD2;
+    margin-top: 10px;
   }
 }
-.actived{
+.hovered{
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: .5s all;
+  z-index: 10;
+}
+.actived{
+  transform: scale(1.15);
+  box-shadow: 0 0 20px rgba(150, 180, 50, 0.5);
   transition: .5s all;
   z-index: 10;
 }
