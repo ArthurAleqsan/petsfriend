@@ -21,10 +21,5 @@
       "services":["medicine","accesuares","shop","food","blog","temporarily keep"]
     }
   ]
-//  "members":[
-//    {
-//      "member_id":1,
-//      "services":["dog walking","dog's medicine","accesuares","shop","dog's food","blog","temporarily keep"]
-//    },
-//  ]
+
 }

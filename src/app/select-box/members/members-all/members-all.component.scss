@@ -1,0 +1,30 @@
+.members-main-content-all{
+    width: 100%;
+    height: auto;
+    &-member {
+        display: flex;
+        width: 30vw;;
+        height: auto;
+        // background-color: rgb(31, 107, 72); 
+        &-img {
+            width: 5vw;
+            height: 7.5vh;
+            margin: 5px;
+            img {
+                width: 5vw;
+                height: 7.5vh;
+            }
+            &-age {
+              display: flex;
+              color:gold
+            }
+        }
+        &-desc {
+            color: white;
+            font-size: 90%;
+            width: 30vw;
+            margin: 5px;
+        }
+    }
+    
+}

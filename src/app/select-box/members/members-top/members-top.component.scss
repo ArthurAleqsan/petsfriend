@@ -1,0 +1,29 @@
+.members-main-content-top{
+    width: 100%;
+    height: auto;
+    &-member {
+        display: flex;
+        width: 30vw;;
+        height: auto;
+        // background-color: rgb(23, 60, 94); 
+        &-img {
+            width: 10vw;
+            height: 15vh;
+            margin: 5px;
+            img {
+                width: 10vw;
+                height: 15vh;
+            }
+            &-age {
+              display: flex;
+              color:gold
+            }
+        }
+        &-desc {
+            color: white;
+            width: 30vw;
+            margin: 5px;
+        }
+    }
+    
+}

@@ -51,7 +51,7 @@
 }
 
 .rating label:last-child .icon {
-  color: #000;
+  color: rgb(247, 247, 247);
 }
 
 .rating:not(:hover) label input:checked ~ .icon,
@@ -60,6 +60,6 @@
 }
 
 .rating label input:focus:not(:checked) ~ .icon:last-child {
-  color: #000;
+  color: rgb(245, 244, 244);
   text-shadow: 0 0 5px #fbff00;
 }
