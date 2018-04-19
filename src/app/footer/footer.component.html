@@ -4,21 +4,12 @@
         <img src="./../../assets/images/footer-icons/facebook-icon.png" alt="facebook" >
         <img src="./../../assets/images/footer-icons/gmail-icon.png" alt="gmail" >
         <img src="./../../assets/images/footer-icons/instagram-icon.png" alt="instagram" >
-        
+
     </div>
     <div class="footer__navigation">
-        <ul class="footer__navigation-list" >
-            <li
-                    *ngFor="let navItem of navItems"
-            >
-                <a class="footer__navigation-link" routerLink="{{navItem.link}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-                        {{navItem.itemName}}
-                </a>
-               
-            </li>
-       </ul>
+        <!--<app-navigation></app-navigation>-->
         <div class="footer__date">
-            <p>© 2018 PetsFriend</p>
+            <p>© {{year }} PetsFriend</p>
         </div>
 
     </div>
