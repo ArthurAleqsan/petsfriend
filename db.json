@@ -3,23 +3,27 @@
     {
       "pet_id":1,
       "services":["dog walking","dog's medicine","accesuares","shop","dog's food","blog","temporarily keep"],
-      "icons":["dog-walking.png","dog-medicine.png","dog-accessories.png", "shop.png","dog-food.png","blog.png","temporarily keep.png"]
+      "icons":["dog-walking.png","medicine.png","dog-accessories.png", "shop.png","dog-food.png","blog.png","temporarily keep.png"]
     },
     {
       "pet_id":2,
-      "services":["cat's medicine","accesuares","shop","cat's food","blog","temporarily keep"]
+      "services":["cat's medicine","accesuares","shop","cat's food","blog","temporarily keep"],
+      "icons":["medicine.png","cat-accessories.png", "shop.png","cat-food.png","blog.png","temporarily keep.png"]
     },
     {
       "pet_id":3,
-      "services":["parrot's medicine","accesuares","shop","parrot's food","blog","temporarily keep"]
+      "services":["parrot's medicine","accesuares","shop","parrot's food","blog","temporarily keep"],
+      "icons":["medicine.png","parrot-accessories.png", "shop.png","parrot-food.png","blog.png","temporarily keep.png"]
     },
     {
       "pet_id":4,
-      "services":["accesuares","shop","fish's food","blog","temporarily keep"]
+      "services":["accesuares","shop","fish's food","blog","temporarily keep"],
+      "icons":["fish-accessories.png", "shop.png","fish-food.png","blog.png","temporarily keep.png"]
     },
     {
       "pet_id":5,
-      "services":["medicine","accesuares","shop","food","blog","temporarily keep"]
+      "services":["medicine","accesuares","shop","food","blog","temporarily keep"],
+      "icons":["medicine.png","accessories.png", "shop.png","food.png","blog.png","temporarily keep.png"]
     }
   ],
   "members":[
