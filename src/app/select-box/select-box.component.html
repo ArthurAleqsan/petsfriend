@@ -14,19 +14,26 @@
 </div>
   <div>
     <div class="select-box-services select-box" *ngIf="selectedPet">
-      <div
-      class="select-box-animal-or-choose"
-      *ngFor="let service of typeOfPet.services"
->
-<p class="select-box-animal-title">
-  {{service}}
-</p>
-
-</div>
+      <div class="select-box-services-icons">
+          <div 
+                *ngFor="let icon of icons"
+          >
+                <img src="{{icon}}" alt="">    
+          </div>
+      </div>
+      <div class="select-box-services-names">
+          <div
+                class="select-box-animal-or-choose"
+                *ngFor="let service of typeOfPet.services"
+          >
+                <p >
+                  {{service}}
+                </p>
+          </div>
+      </div>
     </div>
-
-
 </div>
+
 
 <app-members *ngIf="selectedPet" [selectedPet]="selectedPet"></app-members>
 

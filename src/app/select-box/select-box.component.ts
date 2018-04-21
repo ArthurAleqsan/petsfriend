@@ -10,8 +10,9 @@ import {MembersComponent} from './members/members.component';
 })
 
 export class SelectBoxComponent {
-    public selectedPet: object;
-    public typeOfPet: object = {};
+    public selectedPet: Object;
+    public typeOfPet: Object = {};
+    public icons:Array<String>
     
 
     public selectItems: Array<object> = [
@@ -36,6 +37,8 @@ export class SelectBoxComponent {
                 }
             );
             this.selectedPet = this.typeOfPet;
+            this.icons=this.typeOfPet['icons'];
+            this.icons=this.icons.map(url=>"./../../assets/images/services-icons/"+url);
              this.toggleServices(item);
 
         });
