@@ -4,7 +4,7 @@
     class="select-box-animal-or-choose"
     *ngFor="let item of selectItems"
     (click)="selectPet(item)"
-    [ngClass]="{ actived: isActive}"
+    [ngClass]="{ actived: item.isActive }"
   >
 
         <p class="select-box-animal-title">{{item.itemName}}</p>

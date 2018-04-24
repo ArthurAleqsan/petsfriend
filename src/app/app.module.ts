@@ -11,8 +11,6 @@ import { PartnersComponent } from './partners/partners.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 
-
-
 import { SelectBoxComponent } from './select-box/select-box.component';
 import { HoverDirective } from './hover.directive';
 import { MembersComponent } from './select-box/members/members.component';
@@ -54,6 +52,8 @@ const appRoutes = [
     MembersComponent,
     RatingComponent,
     FooterComponent,
+    MembersTopComponent,
+    MembersAllComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
