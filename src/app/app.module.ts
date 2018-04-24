@@ -17,8 +17,13 @@ import { SelectBoxComponent } from './select-box/select-box.component';
 import { HoverDirective } from './hover.directive';
 import { MembersComponent } from './select-box/members/members.component';
 import { RatingComponent } from './rating/rating.component';
-import { MembersService } from './select-box/members/members.service';
-import { SelectBoxService } from './select-box/select-box.service';
+
+import { MembersAllComponent } from './select-box/members/members-all/members-all.component';
+import { MembersTopComponent } from './select-box/members/members-top/members-top.component';
+
+import {MembersService} from './select-box/members/members.service';
+import {SelectBoxService} from './select-box/select-box.service';
+
 
 
 
@@ -48,7 +53,7 @@ const appRoutes = [
     HoverDirective,
     MembersComponent,
     RatingComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

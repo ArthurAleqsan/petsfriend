@@ -8,31 +8,20 @@ import {SelectBoxComponent} from '../select-box.component';
   templateUrl: './members.component.html',
   styleUrls: ['./members.component.scss'],
 })
-export class MembersComponent implements OnInit {
-  constructor(private membersService: MembersService, public selectBoxComponent: SelectBoxComponent) {
-  }
+export class MembersComponent {
+  public members: Object[];
+  @Input() public set selectedPet(selectedPet: Object) {
+    this.getAllMembers(selectedPet['pet_id']);
+  };
 
-  @Input() selectItem: Object = this.selectBoxComponent.typeOfPet['pet_id'];
+  constructor(private membersService: MembersService) {}
 
-  public getAllMembers() {
+  public getAllMembers(pet_id: number): void {
     this.membersService.getMembers().subscribe(members => {
-      members.map(member => {
-        if (member['pet_id'] === this.selectBoxComponent.typeOfPet['pet_id']) {
-          console.log(member);
-          return member;
-        }
+      this.members = members.filter(member => {
+        return member.pet_id === pet_id;
       });
-    });
+      console.log(this.members);
+    })
   }
-
-  ngOnInit() {
-    this.getAllMembers();
-    console.log(this.selectItem);
-  }
-  // ngOnChanges(changes: SimpleChanges ) {
-  //   console.log(changes);
-  // }
-
-
-
 }

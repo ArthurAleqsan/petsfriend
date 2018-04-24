@@ -1,75 +1,14 @@
-.members-main-content{
-  display:flex;
-  width: 90vw;
-  height: 400px;
-  background-color: red;
+.members-main-content {
+  display: flex;
+  height: auto;
+  width: 60vw;
+  background-color: rgba(22, 19, 19, 0.61);
   margin: 0 auto;
-  &-top{
-    width: 50%;
-    background-color: aqua;
-  }
-  &-all{
-    width: 50%;
-    background-color: #AADD22;
+  margin-top: 15px;
 
-    &-member{
-      display: flex;
-      justify-content: start;
-      align-items: center;
-
-      &-img{
-        width: 5vw;
-        height: 5vw;
-        margin: 15px;
-        position: relative;
-
-        img{
-          width: 5vw;
-          height: 5vw;
-          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-          filter: grayscale(50%);
-          border-radius:10px;
-        }
-
-      }
-    }
-  }
-
-
-  &-member{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &-img{
-      width: 15vw;
-      height: 15vw;
-      margin: 15px;
-      position: relative;
-
-      img{
-        width: 15vw;
-        height: 15vw;
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(50%);
-        border-radius:10px;
-      }
-
-    }
-    &-name{
-      position: absolute;
-      top: 2vw;
-      color: red;
-      left: 1vw;
-      font-size: 2.5vw;
-      z-index: 1;
-    }
-    &-age{
-      position: absolute;
-      bottom: 1vw;
-      color: #fbff00;
-      right: 2vw;
-      font-size: 2.5vw;
-      z-index: 1;
-    }
-  }
 }
+// @for $i from 1 through 2{
+//   .members-main-content:nth-child(#{$i}){
+//     width: 60vw;
+//   }
+// }

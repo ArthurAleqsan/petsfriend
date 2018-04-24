@@ -10,8 +10,10 @@ import {MembersComponent} from './members/members.component';
 })
 
 export class SelectBoxComponent {
-    public selectedPet: object;
-    public typeOfPet = {};
+    public selectedPet: Object;
+    public typeOfPet: Object = {};
+    public icons:Array<String>
+    
 
     public selectItems: Array<object> = [
         {'id':1,'itemName':'DOG','img':'./../../assets/images/selectBox/dog.png','isActive':false},
@@ -35,14 +37,15 @@ export class SelectBoxComponent {
                 }
             );
             this.selectedPet = this.typeOfPet;
-             this.toggleServices(item);
-
+            this.icons=this.typeOfPet['icons'];
+            this.icons=this.icons.map(url=>"./../../assets/images/services-icons/"+url);
+            this.toggleServices(item);
         });
     }
-    private toggleServices(pet){
 
-        let previous: Object = this.selectItems.find(el => el['isActive'] === true);
-        console.log(this.selectItems);
+    private toggleServices(pet: Object) {
+
+        const previous: Object = this.selectItems.find(el => el['isActive']);
         if (previous && previous !== pet) {
             previous['isActive'] = !previous['isActive'];
         }
